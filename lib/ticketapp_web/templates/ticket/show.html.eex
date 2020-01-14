@@ -1,0 +1,48 @@
+<h1>Show Ticket</h1>
+
+<ul>
+
+  <li>
+    <strong>Ref no:</strong>
+    <%= @ticket.ref_no %>
+  </li>
+
+  <li>
+    <strong>Name:</strong>
+    <%= @ticket.name %>
+  </li>
+
+  <li>
+    <strong>Email:</strong>
+    <%= @ticket.email %>
+  </li>
+
+  <li>
+    <strong>Subject:</strong>
+    <%= @ticket.subject %>
+  </li>
+
+  <li>
+    <strong>Department:</strong>
+    <%= @ticket.department %>
+  </li>
+
+  <li>
+    <strong>Message:</strong>
+    <%= @ticket.message %>
+  </li>
+
+  <li>
+    <strong>Assignee:</strong>
+    <%= @ticket.assignee %>
+  </li>
+
+  <li>
+    <strong>Status:</strong>
+    <%= @ticket.status %>
+  </li>
+
+</ul>
+
+<span><%= link "Edit", to: Routes.ticket_path(@conn, :edit, @ticket) %></span>
+<span><%= link "Back", to: Routes.ticket_path(@conn, :index) %></span>

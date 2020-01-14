@@ -1,0 +1,71 @@
+<div class="outer-container d-flex mt-4" style="flex-direction:column;min-height:597px;align-items:center; min-width:716px;align-self:center;margin-top: 5rem;">
+<div><img src="/images/logo.png" alt=""/> </div>
+<div class="inner-container" style="margin-top:5rem;background-color: #fff;width:100%; padding:5%">
+<%= form_for @changeset, @action, fn f -> %>
+  <%= if @changeset.action do %>
+    <div class="alert alert-danger">
+      <p>Oops, something went wrong! Please check the errors below.</p>
+    </div>
+  <% end %>
+  <div></div>
+  <div >
+        <div class="columns new_cl no-margin">
+              <div class="column col-6">
+                    <div class="form-group">
+                    <%= label f, :name %>
+                    <%= text_input f, :name, class: "form_input"%>
+                    <%= error_tag f, :name %>
+                  </div>
+              </div>
+              <div class="column col-6  no-padding">
+                  <div class="form-group">
+                  <%= label f, :email %>
+                  <%= text_input f, :email, class: "form_input" %>
+                  <%= error_tag f, :email %>
+                  </div>
+          </div>
+        </div>
+
+
+        <div class="column col-12  no-padding">
+              <div class="form-group">
+              <%= label f, :subject %>
+              <%= text_input f, :subject, class: "form_input" %>
+              <%= error_tag f, :subject %>
+              </div>
+        </div>
+
+
+        <div class="column col-6 no-padding">
+              <div class="form-group">
+              <%= label f, :department %>
+              <%= select f, :department,["Customer Support": "1","IT": "2"] ,prompt: "Choose Department",class: "form_input form-select" %>
+              <%= error_tag f, :department %>
+              </div>
+        </div>
+
+        <div class="column col-12 new_cl no-padding">
+                <div class="form-group">
+                <%= label f, :message %>
+                <%= textarea f, :message, class: "form_input", placeholder: "Type Something ...", style: "
+    min-height: 100px" %>
+                <%= error_tag f, :message %> 
+                </div>
+        </div>
+
+        <div class="columns new_cl no-margin">
+              <div class="column col-6  no-padding">
+              </div>
+              <div class="column col-6  no-padding">
+                <a>Cancel</a>
+              <%= submit "Submit"  %>
+              </div>
+        </div>
+  
+  
+  </div>
+ 
+<% end %>
+
+</div>
+</div>

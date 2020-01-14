@@ -1,0 +1,61 @@
+<div class="columns" style="width:100vw;height:100vh">
+
+    <%# sidebar %>
+    <div id="side_bar" class="column col-1" style="width:72px;background-color:#021f35;"> 
+        <ul class="ul-list">
+        <li class="li-list" active><a><img src="/images/folder.svg" alt=""/></a></li>
+        <li class="li-list"><a><img src="/images/folder_many.svg" alt=""/></a></li>
+        <li class="li-list"><a><img src="/images/clock.svg" alt=""/></a></li>
+        <li class="li-list"><a><img src="" alt=""/></a></li>
+        </ul>
+             
+    </div>
+
+    <%# main %>
+    <div id="index_main" class="columns column col-11" style="width:calc(100% - 72px)" >
+        <%# header %>
+        <div id="index_header" class="columns column col-12" style="height: 60px ;background-color:#fff;">
+            <h4 class="h2 column col-2" ><b>Tickets</b> 
+            <span id="total"></span>
+            <span>Total</span>
+            </h4> 
+            
+            <div class="column btn col-ml-auto col-1">Viewng Most recent</div> 
+        </div> 
+
+        <%# table %>
+        <div id="index_table" class="table column col-mx-auto col-11" style="">
+              <table id="body">
+                <thead>
+                  <tr>
+                    <th>Ref no</th>
+                    <th>Subject</th>
+                    <th>Name</th>
+                    <th>Assignee</th>
+                    <th>Status</th>
+                    <th>Created</th>    
+                  </tr>
+
+                </thead>
+                <tbody>
+
+                  <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                  </tr>
+
+                </tbody>
+              </table>
+        </div>
+
+    </div>
+</div>
+
+
+
+
+

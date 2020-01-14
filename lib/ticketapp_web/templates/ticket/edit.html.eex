@@ -1,0 +1,5 @@
+
+
+<%= render "form.html", Map.put(assigns, :action, Routes.ticket_path(@conn, :update, @ticket)) %>
+
+
