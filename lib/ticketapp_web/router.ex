@@ -16,7 +16,7 @@ defmodule TicketappWeb.Router do
   scope "/", TicketappWeb do
     pipe_through :browser
 
-    get "/", PageController, :index
+    get "/", TicketController, :index
     resources "/tickets", TicketController
   end
 

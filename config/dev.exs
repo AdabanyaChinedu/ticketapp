@@ -69,7 +69,7 @@ config :phoenix, :plug_init_mode, :runtime
 # Configure your database
 config :ticketapp, Ticketapp.Repo,
   username: "postgres",
-  password: "chinedu",
+  password: "postgres",
   database: "ticketapp_dev",
   hostname: "localhost",
   pool_size: 10,
